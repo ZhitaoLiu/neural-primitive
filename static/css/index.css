@@ -1,0 +1,60 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.publication-title {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors a {
+  color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+  text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.affiliation-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+  margin: 1.5rem auto 0.75rem;
+}
+
+.affiliation-logos img {
+  display: block;
+  width: auto;
+  max-width: min(260px, 80vw);
+  max-height: 58px;
+  object-fit: contain;
+}
+
+.system-overview-figure {
+  margin: 0;
+  width: 100%;
+}
+
+.system-overview-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

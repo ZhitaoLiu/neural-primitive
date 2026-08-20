@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Project page for Neural-Primitive, an efficient end-to-end local planner with primitive-based imitation learning for autonomous flight.">
+  <meta name="keywords" content="Neural-Primitive, autonomous flight, local planning, imitation learning, robotics">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neural-Primitive: An Efficient End-to-end Local Planner for Autonomous Flight</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">
+              Neural-Primitive: An Efficient End-to-end Local Planner with Primitive-based Imitation Learning for
+              Autonomous Flight
+            </h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><a
+                  href="https://scholar.google.com/citations?hl=en&amp;authuser=1&amp;user=ZVtQuWIAAAAJ">Zhitao
+                  Liu</a><sup>&dagger;</sup>,</span>
+              <span class="author-block"><a
+                  href="https://scholar.google.com/citations?hl=en&amp;authuser=1&amp;user=meE0jSkAAAAJ">Guangtong
+                  Xu</a><sup>&dagger;</sup>,</span>
+              <span class="author-block">Zihan Wang,</span>
+              <span class="author-block">Jialiang Hou,</span>
+              <span class="author-block"><a
+                  href="https://scholar.google.com/citations?hl=en&amp;authuser=1&amp;user=IOCO-YQAAAAJ">Chao
+                  Xu</a>,</span>
+              <span class="author-block"><a
+                  href="https://scholar.google.com/citations?hl=en&amp;authuser=1&amp;user=4RObDv0AAAAJ">Fei
+                  Gao</a></span>
+            </div>
+
+            <div class="affiliation-logos" aria-label="Affiliations">
+              <img src="./resources/logo_zju.png" alt="Zhejiang University logo">
+              <img src="./resources/logo_fastlab.png" alt="FAST Lab logo">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="title is-3 has-text-centered">Summary Video</h2>
+        <video controls playsinline preload="metadata" width="100%" aria-label="Neural-Primitive project video">
+          <source src="./resources/neural-primitive_video_intro.mp4" type="video/mp4">
+          Your browser does not support embedded video. You can
+          <a href="./resources/neural-primitive_video_intro.mp4">download the project video</a> instead.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="abstract">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Autonomous flight in unknown cluttered environments is hindered by the
+              <i>computation-quality-memory</i> trilemma of onboard trajectory generation. In this paper, we propose an
+              efficient end-to-end local planner via imitation learning. A lightweight offline-primitive-based dataset
+              collection framework is designed to produce safe and high-quality trajectory primitives in non-convex
+              environments. A compact neural network directly maps sensory inputs to polynomial coefficients that
+              inherently encode higher-order dynamical information. The learned policy generates smooth, empirically
+              collision-free and dynamically feasible trajectories in real time without back-end solving. It achieves
+              ultra-fast computation (below 1ms on a standard desktop and average 3.68ms during onboard flight), while
+              maintaining low onboard memory requirements (less than 1.5MiB). Extensive simulation benchmarks
+              demonstrate superiority in both planning latency and target-reaching progress quality. Zero-shot
+              deployment in real-world experiments further validates the robust sim-to-real transfer capability of the
+              proposed method.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="system-overview">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">System Overview</h2>
+          <figure class="system-overview-figure">
+            <img src="./resources/System_overview.svg"
+              alt="System overview of Neural-Primitive dataset collection, offline training, and online deployment">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered is-size-7">
+        <p>
+          The website design was adapted from
+          <a href="https://general-navigation-models.github.io/vint/index.html">ViNT</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
