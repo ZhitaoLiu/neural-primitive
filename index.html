@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="description"
     content="Project page for Neural-Primitive, an efficient end-to-end local planner with primitive-based imitation learning for autonomous flight.">
-  <meta name="keywords" content="Neural-Primitive, autonomous flight, local planning, imitation learning, robotics">
+  <meta name="keywords" content="Aerial Robotics, Imitation Learning, Autonomous Vehicle Navigation, End-to-end Planning, Collision Avoidance">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Neural-Primitive: An Efficient End-to-end Local Planner for Autonomous Flight</title>
+  <title>Neural-Primitive: An Efficient End-to-end Local Planner with Primitive-based Imitation Learning for Autonomous Flight</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -21,8 +21,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-2 publication-title">
-              Neural-Primitive: An Efficient End-to-end Local Planner with Primitive-based Imitation Learning for
-              Autonomous Flight
+              Neural-Primitive: An Efficient End-to-end Local Planner with Primitive-based Imitation Learning for Autonomous Flight
             </h1>
 
             <div class="is-size-5 publication-authors">
@@ -97,10 +96,116 @@
       <div class="columns is-centered has-text-centered">
         <div class="column">
           <h2 class="title is-3">System Overview</h2>
+          <div class="content has-text-justified">
+            <p>
+              The end-to-end planner generates smooth, empirically collision-free and dynamically feasible trajectories
+              directly from onboard sensory inputs. <strong>(A)</strong> Training datasets are collected entirely in
+              simulation using a customized primitive strategy. <strong>(B)</strong> A neural network learns to predict
+              polynomial coefficients that inherently encode high-order dynamical information for direct execution by the
+              low-level controller. <strong>(C)</strong> The learned policy is zero-shot deployed for fast online inference
+              in previously unseen environments without fine-tuning.
+            </p>
+          </div>
           <figure class="system-overview-figure">
             <img src="./resources/System_overview.svg"
               alt="System overview of Neural-Primitive dataset collection, offline training, and online deployment">
           </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="simulation-experiments">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Simulation Experiments</h2>
+      <h3 class="title is-4 has-text-centered">Benchmark Comparisons</h3>
+      <div class="columns is-variable is-3">
+        <div class="column">
+          <video class="experiment-video" controls playsinline preload="metadata"
+            aria-label="Neural-Primitive benchmark comparisons">
+            <source src="./resources/Benchmark.mp4" type="video/mp4">
+            Your browser does not support embedded video. You can
+            <a href="./resources/Benchmark.mp4">download the benchmark comparison video</a> instead.
+          </video>
+        </div>
+      </div>
+      <h3 class="title is-4 has-text-centered">Generalization Evaluations</h3>
+      <div class="columns is-variable is-3">
+        <div class="column">
+          <video class="experiment-video" controls playsinline preload="metadata"
+            aria-label="Neural-Primitive forest simulation experiment 1">
+            <source src="./resources/Sim2sim-forest-1.mp4" type="video/mp4">
+            Your browser does not support embedded video. You can
+            <a href="./resources/Sim2sim-forest-1.mp4">download forest simulation experiment 1</a> instead.
+          </video>
+        </div>
+        <div class="column">
+          <video class="experiment-video" controls playsinline preload="metadata"
+            aria-label="Neural-Primitive forest simulation experiment 2">
+            <source src="./resources/Sim2sim-forest-2.mp4" type="video/mp4">
+            Your browser does not support embedded video. You can
+            <a href="./resources/Sim2sim-forest-2.mp4">download forest simulation experiment 2</a> instead.
+          </video>
+        </div>
+      </div>
+      <div class="columns is-variable is-3">
+        <div class="column">
+          <video class="experiment-video" controls playsinline preload="metadata"
+            aria-label="Neural-Primitive cave simulation experiment 1">
+            <source src="./resources/Sim2sim-cave-1.mp4" type="video/mp4">
+            Your browser does not support embedded video. You can
+            <a href="./resources/Sim2sim-cave-1.mp4">download cave simulation experiment 1</a> instead.
+          </video>
+        </div>
+        <div class="column">
+          <video class="experiment-video" controls playsinline preload="metadata"
+            aria-label="Neural-Primitive cave simulation experiment 2">
+            <source src="./resources/Sim2sim-cave-2.mp4" type="video/mp4">
+            Your browser does not support embedded video. You can
+            <a href="./resources/Sim2sim-cave-2.mp4">download cave simulation experiment 2</a> instead.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="real-world-experiments">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Real-world Experiments</h2>
+      <div class="columns is-variable is-3">
+        <div class="column">
+          <video class="experiment-video" controls playsinline preload="metadata"
+            aria-label="Neural-Primitive outdoor experiment 1">
+            <source src="./resources/Outdoor-1.mp4" type="video/mp4">
+            Your browser does not support embedded video. You can
+            <a href="./resources/Outdoor-1.mp4">download outdoor experiment 1</a> instead.
+          </video>
+        </div>
+        <div class="column">
+          <video class="experiment-video" controls playsinline preload="metadata"
+            aria-label="Neural-Primitive outdoor experiment 2">
+            <source src="./resources/Outdoor-2.mp4" type="video/mp4">
+            Your browser does not support embedded video. You can
+            <a href="./resources/Outdoor-2.mp4">download outdoor experiment 2</a> instead.
+          </video>
+        </div>
+      </div>
+      <div class="columns is-variable is-3">
+        <div class="column">
+          <video class="experiment-video" controls playsinline preload="metadata"
+            aria-label="More Neural-Primitive outdoor experiments">
+            <source src="./resources/Outdoor-More.mp4" type="video/mp4">
+            Your browser does not support embedded video. You can
+            <a href="./resources/Outdoor-More.mp4">download more outdoor experiments</a> instead.
+          </video>
+        </div>
+        <div class="column">
+          <video class="experiment-video" controls playsinline preload="metadata"
+            aria-label="Neural-Primitive indoor experiment 1">
+            <source src="./resources/Indoor-1.mp4" type="video/mp4">
+            Your browser does not support embedded video. You can
+            <a href="./resources/Indoor-1.mp4">download indoor experiment 1</a> instead.
+          </video>
         </div>
       </div>
     </div>
