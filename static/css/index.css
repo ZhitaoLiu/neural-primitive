@@ -66,8 +66,14 @@ body {
 }
 
 .visitor-map {
+  display: flex;
+  justify-content: center;
   padding: 1.5rem;
-  text-align: center;
+}
+
+.visitor-map a {
+  display: block;
+  max-width: 100%;
 }
 
 .visitor-map img {
