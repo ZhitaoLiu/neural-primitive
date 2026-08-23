@@ -31,6 +31,21 @@ body {
   display: inline-block;
 }
 
+.link-block a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.publication-venue {
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+.contribution-note {
+  margin-top: 0.75rem;
+  color: #6b6b6b;
+}
+
 .affiliation-logos {
   display: flex;
   align-items: center;
