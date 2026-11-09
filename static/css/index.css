@@ -31,9 +31,16 @@ body {
   display: inline-block;
 }
 
-.link-block a {
+.link-block .button {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.button.code-coming-soon[disabled] {
+  background-color: #d1d1d1;
+  border-color: #d1d1d1;
+  color: #626262;
+  opacity: 1;
 }
 
 .publication-venue {
