@@ -36,14 +36,6 @@ body {
   margin-bottom: 5px;
 }
 
-.button.code-coming-soon[aria-disabled="true"] {
-  pointer-events: none;
-  background-color: #d1d1d1;
-  border-color: #d1d1d1;
-  color: #626262;
-  opacity: 1;
-}
-
 .publication-venue {
   margin: 1.5rem 0;
   line-height: 1.6;
