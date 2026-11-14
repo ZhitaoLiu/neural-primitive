@@ -36,7 +36,8 @@ body {
   margin-bottom: 5px;
 }
 
-.button.code-coming-soon[disabled] {
+.button.code-coming-soon[aria-disabled="true"] {
+  pointer-events: none;
   background-color: #d1d1d1;
   border-color: #d1d1d1;
   color: #626262;
